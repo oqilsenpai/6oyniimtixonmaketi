@@ -1,0 +1,65 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    min-height: 100vh; /* Full viewport height */
+    background-color: rgb(240, 248, 255); /* Light background color */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Header Styling */
+  .header {
+    position: absolute;
+    top: 20px; /* Position header near the top */
+    left: 20px; /* Align header to the left */
+  }
+  
+  .header__logo {
+    width: 50px; /* Adjust logo size */
+  }
+  
+  /* Form Styling */
+  .form {
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow effect */
+    max-width: 500px; /* Max width for the form */
+    width: 100%; /* Ensure the form uses full available width */
+    padding: 40px; /* Increased padding for better spacing */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  /* Form Input Styling */
+  .form input {
+    border: 2px solid #007bff; /* Blue border color for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    padding: 12px; /* Padding inside the input fields */
+    margin-bottom: 20px; /* Space between input fields */
+    font-size: 16px; /* Font size for input text */
+    width: calc(100% - 24px); /* Ensure inputs take full width of form minus padding */
+  }
+  
+  /* Form Button Styling */
+  .form button {
+    background-color: #28a745; /* Green background for the button */
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    color: #fff; /* White text color */
+    padding: 12px 20px; /* Button padding */
+    font-size: 16px; /* Font size for button text */
+    width: 100%; /* Full width for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .form button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Display Container (if used) */
+  .display-container {
+    margin-top: 20px; /* Space above the display container */
+    text-align: center; /* Center text inside display container */
+  }
+  

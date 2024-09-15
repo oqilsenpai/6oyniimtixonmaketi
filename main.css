@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh; 
+  background-color: rgb(110, 222, 236); 
+
+}
+.header__p {
+ margin-top: 85px;
+ color: red;
+}
+
+.auth{
+  font-size: 40px;
+  color: #000102;
+}
+
+
+.header__logo {
+  width: 40px;
+  
+}
+
+
+
+

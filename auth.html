@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>exam</title>
+  </head>
+  <body>
+    <header class="conteaner header">
+      <div class="auth">AUTH PAGE</div>
+      <div class="header__div">
+        <div
+          id="login-div"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="style-div"
+        >
+          <p class="header__p">LOGIN</p>
+        </div>
+        <div style="display: none" id="isLogin">
+          <a class="exitclass" href="./admin.html">Admin sahifaga o'tish</a>
+          <p id="logout" class="logoutclass">Chiqish</p>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="my-3 p-3">
+              <input
+                placeholder="Username"
+                type="text"
+                class="form-control mt-2"
+                id="username"
+              />
+              <input
+                placeholder="Password"
+                type="password"
+                class="form-control mt-2"
+                id="password"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button id="sign-btn" type="button" class="btn btn-primary">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <button
+      type="button"
+      class="btn btn-link"
+      data-bs-toggle="modal"
+      data-bs-target="#registerModal"
+      style="margin-top: 120px;
+      color: red;"
+      
+    >
+      Register
+    </button>
+
+
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="my-3 p-3">
+              <input
+                placeholder="First Name"
+                type="text"
+                class="form-control mt-2"
+                id="firstname"
+              />
+              <input
+                placeholder="Last Name"
+                type="text"
+                class="form-control mt-2"
+                id="lastname"
+              />
+              <input
+                placeholder="Username"
+                type="text"
+                class="form-control mt-2"
+                id="reg-username"
+              />
+              <input
+                placeholder="Email"
+                type="email"
+                class="form-control mt-2"
+                id="reg-email"
+              />
+              <input
+                placeholder="Password"
+                type="password"
+                class="form-control mt-2"
+                id="reg-password"
+              />
+              <input
+                placeholder="Phone"
+                type="tel"
+                class="form-control mt-2"
+                id="phone"
+              />
+              <input
+                placeholder="City"
+                type="text"
+                class="form-control mt-2"
+                id="city"
+              />
+              <input
+                placeholder="Street"
+                type="text"
+                class="form-control mt-2"
+                id="street"
+              />
+              <input
+                placeholder="House Number"
+                type="number"
+                class="form-control mt-2"
+                id="house-number"
+              />
+              <input
+                placeholder="Zipcode"
+                type="text"
+                class="form-control mt-2"
+                id="zipcode"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button id="register-btn" type="button" class="btn btn-primary">
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
